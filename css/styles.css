@@ -966,19 +966,16 @@ a {
 
 /* Форма модального окна */
 
-.svg-modal {
-  transition: fill 250ms var(--cubic-bezier);
-}
-
-.field-modal input:focus-within + .svg-modal,
-.field-modal input:hover + .svg-modal {
+.input:focus + .svg-modal,
+.input:hover + .svg-modal {
   fill: var(--accent-color);
 }
 
-.field-modal input:focus,
-.field-modal input:hover {
+.container-input-modal .input:focus,
+.container-input-modal .input:hover {
   border: 1px solid var(--accent-color);
   border-radius: 4px;
+  fill: var(--accent-color);
 }
 
 .form-text {
@@ -995,8 +992,6 @@ a {
 }
 
 .field-modal {
-  position: relative;
-
   display: block;
 
   font-size: 12px;
@@ -1008,12 +1003,7 @@ a {
   cursor: pointer;
 }
 
-.input-modal {
-  border: 1px solid #000000;
-  transform: rotate(90deg);
-}
-
-.field-modal input {
+.field-modal .input {
   display: block;
   margin-bottom: 10px;
   width: 100%;
@@ -1027,10 +1017,21 @@ a {
   transition: border 250ms var(--cubic-bezier);
 }
 
+.container-input-modal {
+  position: relative;
+}
+
+.svg-modal {
+  transition: fill 250ms var(--cubic-bezier);
+}
+
 .svg-modal {
   position: absolute;
+
   left: 21px;
   top: 50%;
+
+  transform: translateY(-50%);
 }
 
 .coment-modal {
@@ -1083,7 +1084,7 @@ a {
   color: var(--title-text-color);
 }
 
-.checkbox-input {
+.vizually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;

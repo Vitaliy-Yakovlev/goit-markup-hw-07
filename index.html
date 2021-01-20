@@ -439,7 +439,7 @@
 
         <div class="join-footer">
           <b class="text-footer">Подпишитесь на рассылку</b>
-          <form class="form-footer">
+          <form class="form-footer js-speaker-form">
             <label class="field-footer">
               <input
                 class="input-footer"
@@ -478,31 +478,35 @@
           <label class="field-modal">
             <span class="field-text">Имя</span>
 
-            <input type="text" name="user-name" />
-
-            <svg class="svg-modal" width="18px" height="18px">
-              <use xlink:href="./images/sprite.svg#personebp"></use>
-            </svg>
+            <div class="container-input-modal">
+              <input class="input" type="text" name="user-name" />
+              <svg class="svg-modal" width="18px" height="18px">
+                <use xlink:href="./images/sprite.svg#personebp"></use>
+              </svg>
+            </div>
           </label>
 
           <label class="field-modal">
             <span class="field-text">Телефон</span>
 
-            <input type="tel" name="tel" />
-
-            <svg class="svg-modal" width="18px" height="18px">
-              <use xlink:href="./images/sprite.svg#phonebp"></use>
-            </svg>
+            <div class="container-input-modal">
+              <input class="input" type="tel" name="tel" />
+              <svg class="svg-modal" width="18px" height="18px">
+                <use xlink:href="./images/sprite.svg#phonebp"></use>
+              </svg>
+            </div>
           </label>
 
           <label class="field-modal">
             <span class="field-text">Почта</span>
 
-            <input type="email" name="email" />
+            <div class="container-input-modal">
+              <input class="input" type="email" name="email" />
 
-            <svg class="svg-modal" width="18px" height="18px">
-              <use xlink:href="./images/sprite.svg#emailbp"></use>
-            </svg>
+              <svg class="svg-modal" width="18px" height="18px">
+                <use xlink:href="./images/sprite.svg#emailbp"></use>
+              </svg>
+            </div>
           </label>
 
           <label class="field-modal">
@@ -517,7 +521,7 @@
 
           <label class="checkbox-modal">
             <input
-              class="checkbox-input"
+              class="checkbox-input vizually-hidden"
               type="checkbox"
               name="checkbox-modal"
             />
