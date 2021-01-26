@@ -1,0 +1,69 @@
+.section {
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.engage-title {
+  margin: 0;
+  margin-bottom: 50px;
+
+  color: $primary-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.engage-list {
+  @extend %ul;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * 30px);
+  margin-top: calc(-1 * 30px);
+}
+
+.engage-list .engage-card {
+  margin-left: $card-table;
+  margin-top: $card-table;
+  flex-basis: calc(100% / 3 - 30px);
+}
+
+.img {
+  margin-bottom: $card-table;
+}
+
+.section .engage-card {
+  position: relative;
+}
+
+.engage-img-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 27px 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.section-command .section-work {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}

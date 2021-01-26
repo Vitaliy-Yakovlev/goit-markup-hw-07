@@ -25,7 +25,7 @@
 
 /* Стили для index.html */
 
-body {
+/* body {
   background-color: var(--primary-white-color);
   color: var(--title-text-color);
   font-family: Roboto, sans-serif;
@@ -44,12 +44,12 @@ header {
 
 a {
   text-decoration: none;
-}
+} */
 
 /* Утилиты */
 
 /* :hover, */
-:focus {
+/* :focus {
   outline: 1px solid rgba(0, 0, 0, 0.1);
   outline-offset: 0;
 }
@@ -73,37 +73,23 @@ a {
   width: 1px;
   height: 1px;
   margin: -1px;
-}
+} */
 
 /* Шапка */
 
 /* главная навигация */
 
-.main-nav {
+/* .header-nav {
   display: flex;
   align-items: center;
 }
 
-.link {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.main-nav {
+  display: flex;
+  align-items: center;
+} */
 
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--cubic-bezier);
-
-  /* transition: color 250ms var(--cubic-bezier); */
-}
-
-.current {
-  position: relative;
-  color: var(--accent-color);
-}
-
-.site-nav .current::after {
+/* .site-nav .current::after {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -114,14 +100,14 @@ a {
   border-radius: 2px;
   display: block;
 
-  background-color: var(--accent-color);
-}
+  background-color: $accent-color;
+} */
 
-.site-nav > .item > .link {
+/* .site-nav > .item > .link {
   position: relative;
-}
+} */
 
-.site-nav > .item > .link::before {
+/* .site-nav > .item > .link::before {
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -136,43 +122,62 @@ a {
 
   transform: scaleX(0);
   transition: 250ms var(--cubic-bezier);
-}
+} */
 
-.site-nav > .item > .link:hover::before,
+/* .site-nav > .item > .link:hover::before,
 .site-nav > .item > .link:focus::before {
   color: var(--accent-color);
 
   transform: scaleX(1);
-}
+} */
 
-.nav-link-logo:hover,
-.nav-link-logo:focus {
-  color: var(--accent-color);
+/* .link {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: color 250ms var(--cubic-bezier); */
-}
+  transition: color 250ms var(--cubic-bezier);
+} */
 
-.nav-link-logo {
+/* .current {
+  position: relative;
+  color: var(--accent-color);
+} */
+
+/* .nav-link-logo:hover,
+.nav-link-logo:focus {
+  color: var(--accent-color);
+} */
+
+/* .nav-link-logo {
   color: var(--primary-text-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
 
-.logo {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic-bezier);
+
+  transition: color 250ms var(--cubic-bezier);
+} */
+
+/* .logo {
   color: var(--accent-color);
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-}
+} */
 
-.site-nav {
+/* .site-nav {
   display: flex;
   margin-left: 93px;
 }
@@ -185,9 +190,9 @@ a {
 
 .site-nav .item + .item {
   margin-left: 50px;
-}
+} */
 
-.auth-nav {
+/* .auth-nav {
   display: flex;
   margin-left: auto;
 }
@@ -202,21 +207,21 @@ a {
 
   color: var(--title-text-color);
   fill: var(--title-text-color);
-}
+} */
 
-.link:hover,
+/* .link:hover,
 .link:focus {
   color: var(--accent-color);
   fill: currentColor;
-}
+} */
 
-.envelope {
+/* .envelope {
   margin-right: 10px;
-}
+} */
 
 /* Герой */
 
-.hero {
+/* .hero {
   background-color: var(--secondary-color);
   text-align: center;
 }
@@ -224,8 +229,8 @@ a {
 .bcg-img {
   display: flex;
   align-items: center;
-  flex-flow: column;
   justify-content: center;
+  flex-flow: column;
 
   max-width: 1600px;
   height: 600px;
@@ -276,22 +281,22 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier); */
-}
+  transition: color 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier);
+} */
 
-.hero-button:hover,
+/* .hero-button:hover,
 .hero-button:focus {
   color: var(--accent-color);
   background-color: var(--primary-white-color);
   border: 1px solid transparent;
-}
+} */
 
 /* Блоки секции */
 
 /* Наши приемущества */
 
-.section-advant {
+/* .section-advant {
   padding-top: 96px;
   padding-bottom: 94px;
 }
@@ -327,12 +332,12 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-}
+} */
 
 /* icon */
 /* Наши приемущество */
 
-.item-icon {
+/* .item-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -342,11 +347,11 @@ a {
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
-}
+} */
 
 /* Чем мы занимаемся */
 
-.section {
+/* .section {
   padding-bottom: 94px;
 
   text-align: center;
@@ -424,11 +429,11 @@ a {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-}
+} */
 
 /* Наша команда */
 
-.section-command {
+/* .section-command {
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -454,12 +459,12 @@ a {
 .section-client {
   padding-top: 94px;
   padding-bottom: 94px;
-}
+} */
 
 /* Наша команда */
 /* Социальные сети */
 
-.social-network {
+/* .social-network {
   display: flex;
   justify-content: space-between;
 
@@ -482,18 +487,18 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: background-color 250ms var(--cubic-bezier); */
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .link-network:hover,
 .link-network:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
-}
+} */
 
 /* Постоянные клиенты */
 
-.clients {
+/* .clients {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -513,18 +518,18 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: fill 250ms var(--cubic-bezier); */
+  transition: fill 250ms var(--cubic-bezier);
 }
 
 .link-svg:hover,
 .link-svg:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
-}
+} */
 
 /* Подвал */
 
-.footer {
+/* .footer {
   padding: 0;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -590,7 +595,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: color 250ms var(--cubic-bezier); */
+  transition: color 250ms var(--cubic-bezier);
 }
 
 .address-link {
@@ -610,12 +615,12 @@ a {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-}
+} */
 
 /* Подвал */
 /* Социальные сети */
 
-.text-footer {
+/* .text-footer {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -635,6 +640,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+
   margin-left: 10px;
 
   width: 44px;
@@ -647,7 +653,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: background-color 250ms var(--cubic-bezier); */
+  transition: background-color 250ms var(--cubic-bezier);
 }
 
 .link-network-footer:first-child {
@@ -658,11 +664,11 @@ a {
 .link-network-footer:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
-}
+} */
 
 /* Подписаться */
 
-.join-footer {
+/* .join-footer {
   margin-left: auto;
 }
 
@@ -693,6 +699,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+
   border: 1px solid transparent;
   text-align: center;
   min-width: 200px;
@@ -713,8 +720,8 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: color 250ms var(--cubic-bezier),
-    background-color 250ms var(--cubic-bezier); */
+  transition: color 250ms var(--cubic-bezier),
+    background-color 250ms var(--cubic-bezier);
 }
 
 .btn-footer:hover,
@@ -738,14 +745,14 @@ a {
 .btn-footer:hover .svg-footer,
 .btn-footer:focus .svg-footer {
   fill: var(--accent-color);
-}
+} */
 
 /* Стили для Портфолио */
 
 /* Кнопки */
 /* Фильтры */
 
-.button {
+/* .button {
   border-radius: 4px;
   padding: 6px 22px;
   display: inline-block;
@@ -765,8 +772,8 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: background-color 250ms var(--cubic-bezier),
-    color 250ms var(--cubic-bezier); */
+  transition: background-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier);
 }
 
 .button:hover,
@@ -776,24 +783,25 @@ a {
 
   color: var(--secondary-command-color);
   background-color: var(--accent-color);
-}
+} */
 /* Флекс бокс */
 
-.nav-button {
+/* .nav-button {
   display: flex;
+  justify-content: center;
+
   margin-left: 0;
   margin-bottom: 50px;
-  justify-content: center;
 }
 
 .nav-button .btn-flex + .btn-flex {
   display: block;
   margin-left: 8px;
-}
+} */
 
 /* Наши работы  */
 
-.section-workcin {
+/* .section-workcin {
   padding-top: 94px;
   padding-bottom: 94px;
 
@@ -818,16 +826,18 @@ a {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
-}
+} */
 
 /* Пик бокс флекс */
 
-.pic-box {
+/* .pic-box {
   display: flex;
   flex-wrap: wrap;
+
   margin-left: -30px;
   margin-top: -30px;
 }
+
 .pic-flex {
   margin-left: 30px;
   margin-top: 30px;
@@ -878,17 +888,17 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: transform 250ms var(--cubic-bezier); */
+  transition: transform 250ms var(--cubic-bezier);
 }
 
 .pic-link:hover .pic-text,
 .pic-link:focus .pic-text {
   transform: translateY(0);
-}
+} */
 
 /* Модальное окно */
 
-.backdrop.is-hidden {
+/* .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
@@ -906,7 +916,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: opacity 250ms var(--cubic-bezier); */
+  transition: opacity 250ms var(--cubic-bezier);
 }
 
 .backdrop.is-hidden .modal {
@@ -935,7 +945,7 @@ a {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic-bezier);
 
-  /* transition: transform 250ms var(--cubic-bezier); */
+  transition: transform 250ms var(--cubic-bezier);
 }
 
 .modal-btn {
@@ -962,11 +972,11 @@ a {
 .modal-btn:hover,
 .modal-btn:focus {
   fill: var(--accent-color);
-}
+} */
 
 /* Форма модального окна */
 
-.svg-modal {
+/* .svg-modal {
   transition: fill 250ms var(--cubic-bezier);
 }
 
@@ -1158,6 +1168,6 @@ a {
 
 .btn-modal:focus,
 .btn-modal:hover {
-  box-shadow: 0 0 0 1px #757575;
+  box-shadow: 0 0 0 1px var(--title-text-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
+} */
