@@ -23,12 +23,6 @@
   margin-top: calc(-1 * 30px);
 }
 
-.advant-item .advant-item {
-  margin-left: $card-table;
-  margin-top: $card-table;
-  flex-basis: calc(100% / 4 - 30px);
-}
-
 .advant-title {
   margin: 0;
   margin-bottom: 10px;
@@ -57,4 +51,10 @@
   width: 270px;
   height: 120px;
   margin-bottom: $card-table;
+}
+
+.advant-item .advant-item {
+  margin-left: $card-table;
+  margin-top: $card-table;
+  flex-basis: calc(100% / 4 - 30px);
 }

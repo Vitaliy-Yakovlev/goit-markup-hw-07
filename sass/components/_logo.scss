@@ -1,3 +1,11 @@
+.logo {
+  color: $accent-color;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
 .nav-link-logo {
   color: $primary-text-color;
   font-family: Raleway;
@@ -11,14 +19,6 @@
   &:focus {
     color: $accent-color;
   }
-}
-
-.logo {
-  color: $accent-color;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
 }
 
 .nav-link-logo.footer {

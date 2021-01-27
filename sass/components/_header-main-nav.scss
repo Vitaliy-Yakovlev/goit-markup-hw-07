@@ -12,9 +12,6 @@
 
 .site-nav {
   @extend %ul;
-}
-
-.site-nav {
   display: flex;
   margin-left: 93px;
 }
@@ -41,9 +38,7 @@
 .site-nav-link {
   @extend %link;
   position: relative;
-}
 
-.site-nav-link {
   display: block;
   padding-top: 31px;
   padding-bottom: 31px;
